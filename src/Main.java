@@ -2,17 +2,18 @@ public class Main {
 
     public static void main(String[] args)  {
 
-MyIntegerListImpl myIntegerList = new MyIntegerListImpl();
-MyStringListImpl myStringList = new MyStringListImpl();
+IMyList<Integer> myIntegerList = new MyIntegerListImpl();
+IMyList<String> myStringList = new MyStringListImpl();
 
 myIntegerList.add(7);
 myStringList.add("for");
 
-print(myIntegerList,myStringList);
+print(myIntegerList);
+print(myStringList);
 
     }
-    public static void print(IMyList iMyList,IMyList iMyList1) {
+    public static void print(IMyList iMyList) {
    iMyList.print();
-   iMyList1.print();
+
     }
 }
